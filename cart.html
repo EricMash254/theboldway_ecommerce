@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Boldway | Cart</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+     <!-- Box Icons -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+   />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <!-- <img src="assets/img/logo.png" alt="logo"> -->
+        <i class="fas fa-shopping-bag fa-1x logo-icon"></i>
+        <a class="navbar-brand" href="#">
+            The Boldway Collection
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-buttons" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Contact</a>
+            </li>
+
+            <li class="nav-item">
+               <a class="cart-link" href="cart.html"> <i class="fas fa-shopping-bag"></i></a>
+                <i class="fas fa-user"></i>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- cart -->
+    <section class="cart container my-5 py-5">
+        <div class="container mt-5">
+            <h2 class="font-weight-bold text-center">Your Cart</h2>
+            <hr>
+        </div>
+
+        <table class="mt-5 pt-5">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-info">
+                        <img src="assets/img/Products/big_bagpack1.jpg" />
+                        <div>
+                            <p>Kifaru BagPack</p>
+                            <small><span>Kes. </span>3,000</small>
+                            <br>
+                            <a href="#" class="remove-btn">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <input type="number" value="1"/>
+                    <a href="#" class="edit-btn">Edit</a>
+                </td>
+                <td>
+                    <span>Kes. </span>
+                    <span>3,000</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-info">
+                        <img src="assets/img/Products/corporate_totebag1.jpg" />
+                        <div>
+                            <p>Corporate ToteBag</p>
+                            <small><span>Kes. </span>4,000</small>
+                            <br>
+                            <a href="#" class="remove-btn">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <input type="number" value="1"/>
+                    <a href="#" class="edit-btn">Edit</a>
+                </td>
+                <td>
+                    <span>Kes. </span>
+                    <span>4,000</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="product-info">
+                        <img src="assets/img/Products/grey_duffle2.jpg" />
+                        <div>
+                            <p>Grey Duffle Bag</p>
+                            <small><span>Kes. </span>3,500</small>
+                            <br>
+                            <a href="#" class="remove-btn">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <input type="number" value="1"/>
+                    <a href="#" class="edit-btn">Edit</a>
+                </td>
+                <td>
+                    <span>Kes. </span>
+                    <span>3,500</span>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="cart-total">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Kes. 8,400</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>Kes. 1,600</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Kes. 10,000</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="checkout-container">
+            <button class="btn checkout-btn">Checkout</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+         <!-- Footer -->
+  <section class="footer container">
+    <div class="footer-box">
+      <!--Logo  -->
+      <i class="fas fa-shopping-bag fa-1x logo-icon"></i>
+        <a class="navbar-brand" href="#">
+            The Boldway Collection
+        </a>
+      <p>Be Bold Be You</p>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100072209465428&mibextid=LQQJ4d">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="https://instagram.com/the_boldway?igshid=MzRlODBiNWFlZA==">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="bx bxl-youtube"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-box">
+      <h3>Support</h3>
+      <li>
+        <a href="#">Products</a>
+      </li>
+      <li>
+        <a href="#">Help</a>
+      </li>
+      <li>
+        <a href="#">Return Policy</a>
+      </li>
+      <li>
+        <a href="#">Terms of Use</a>
+      </li>
+    </div>
+    <div class="footer-box">
+      <h3>View Guide</h3>
+      <li>
+        <a href="#">Products</a>
+      </li>
+      <li>
+        <a href="#">Our Blogs</a>
+      </li>
+      <li>
+        <a href="#">Our Partners</a>
+      </li>
+      <li>
+        <a href="#">Shop Now</a>
+      </li>
+    </div>
+    <div class="footer-box contact">
+      <h3>Contact</h3>
+      <span><i class="bx bxs-package"></i>Nairobi</span>
+      <span><i class="bx bxs-phone"></i>+254 710 789 687</span>
+      <span
+        ><i class="bx bxs-envelope"></i>theboldwaycollection@gmail.com</span
+      >
+    </div>
+  </section>
+<!-- Copyright -->
+<div class="copyright">
+  <p>&#169; <a href="https://turquoise-libbi-10.tiiny.site" class="designer">Eric Mash</a> All Rights Reserved</p>
+</div>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
